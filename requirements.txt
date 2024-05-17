@@ -1,5 +1,4 @@
 dash==2.6.0
 pandas
-plotly.express
+plotly
 dash_table
-plotly.graph_objects
