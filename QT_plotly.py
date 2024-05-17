@@ -9,7 +9,8 @@ Created on Thu May 16 11:47:00 2024
 import pandas as pd
 from dash import Dash, dcc, html, Input, Output
 import plotly.express as px
-import dash_table
+from dash import dash_table
+
 
 import plotly.graph_objects as go
 
