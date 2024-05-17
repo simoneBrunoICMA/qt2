@@ -15,7 +15,7 @@ import plotly.graph_objects as go
 
 #%%
 #import files here
-df = pd.read_excel(r"C:\Users\SimoneBruno\OneDrive - ICMA\Simone\55) QT plotly\master sheet .xlsx")
+df = pd.read_excel(r"master sheet .xlsx")
 
 df['Date'] = pd.to_datetime(df['Date']).dt.strftime("%Y-%m-%d")
 
@@ -94,6 +94,7 @@ columns = df.columns[1:]
 
 # Initialize the Dash app
 app = Dash(__name__)
+server=app.server
 
 # Define the layout of the app
 app.layout = html.Div([
@@ -169,4 +170,4 @@ def update_chart_and_table(selected_columns, start_date, end_date, show_sum_line
 
 # Run the app on port 8051
 if __name__ == '__main__':
-    app.run_server(debug=True, port=8051)
+    app.run_server(debug=True)
