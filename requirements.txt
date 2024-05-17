@@ -4,3 +4,4 @@ plotly
 dash_table
 gunicorn
 openpyxl
+Flask==2.2.5
